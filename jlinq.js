@@ -929,7 +929,7 @@ var jl;
                 });
             }},
             
-        //does this start with a value
+        //does this end with a value
         { name:"ends", type:framework.command.query, 
             method:function(value) {
                 return this.compare({
@@ -938,7 +938,7 @@ var jl;
                 });
             }},
             
-        //does this start with a value
+        //does this contain a value
         { name:"contains", type:framework.command.query, 
             method:function(value) {
                 return this.compare({
@@ -950,7 +950,7 @@ var jl;
                 });
             }},
             
-        //does this start with a value
+        //does this match a regular expression
         { name:"match", type:framework.command.query, 
             method:function(value) {
                 return this.compare({
